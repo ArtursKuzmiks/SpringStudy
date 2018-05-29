@@ -16,6 +16,7 @@ import java.util.List;
 /**
  * @author Artur Kuzmik on 18.29.5
  */
+
 @Service("CustomerService")
 public class CustomerServiceImpl implements CustomerService {
 
@@ -68,7 +69,7 @@ public class CustomerServiceImpl implements CustomerService {
             System.out.print("Paid: ");
             float paid = Float.parseFloat(reader.readLine());
 
-            customerDao.addCustomer(new Customer(findAll().size() - 1, name, surname, sim.format(data), cost, paid));
+            customerDao.addCustomer(new Customer(findAll().size() +1, name, surname, sim.format(data), cost, paid));
 
 
         } catch (IllegalArgumentException e) {

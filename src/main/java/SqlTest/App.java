@@ -38,7 +38,7 @@ public class App {
             loop:
             for (; ; ) {
 
-                System.out.print("Input:");
+                System.out.print("Input: ");
                 menu = Integer.parseInt(br.readLine());
 
                 switch (menu) {
