@@ -4,16 +4,12 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.*;
 
 @Configuration
-@ComponentScan
+@ComponentScan (basePackages = "hello")
 public class Application {
 
     @Bean
     MessageService mockMessageService() {
-        return new MessageService() {
-            public String getMessage() {
-                return "Hello World!";
-            }
-        };
+        return () -> "Hello World!";
     }
 
     public static void main(String[] args) {

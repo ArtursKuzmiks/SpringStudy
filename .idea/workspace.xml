@@ -2,56 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d1fd3e-2ac6-4cbe-ae2e-ab7c4276107f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/cb3a491c-8485-45d7-ba90-ac1dee1b06fe.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/cb3a491c-8485-45d7-ba90-ac1dee1b06fe/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Example1/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Example1/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Example1/MediaTek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Example1/MobileProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Example1/Samsung.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Example1/Snapdragon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SqlTest/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SqlTest/AppConfig/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SqlTest/AppConfig/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SqlTest/Dao/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SqlTest/Dao/CustomerDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SqlTest/Service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SqlTest/Service/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/MessagePrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/customer.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/ApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Example1/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Example1/AppConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Example1/MediaTek.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Example1/MobileProcessor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Example1/Samsung.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Example1/Snapdragon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SqlTest/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SqlTest/AppConfig/AppConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SqlTest/AppConfig/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SqlTest/Dao/CustomerDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SqlTest/Dao/CustomerDaoImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SqlTest/Service/CustomerService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SqlTest/Service/CustomerServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/customer.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/hello/Application$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/hello/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/hello/MessagePrinter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/hello/MessageService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/hello/ApplicationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Example1/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Example1/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SqlTest/AppConfig/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SqlTest/AppConfig/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/Application.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -94,13 +48,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Example1/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+            <state relative-caret-position="480">
+              <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/Dao/CustomerDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="76" column="24" lean-forward="true" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/Service/CustomerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#addCustomer#0;class#CustomerServiceImpl#0" />
+                <element signature="method#editCustomer#0;class#CustomerServiceImpl#0" />
+                <element signature="method#deleteCustomer#0;class#CustomerServiceImpl#0" />
+                <element signature="method#sortDateSurname#0;class#CustomerServiceImpl#0" />
+                <element signature="method#debtors#0;class#CustomerServiceImpl#0" />
+                <element signature="method#allPrice#0;class#CustomerServiceImpl#0" />
+                <element signature="method#printCustomers#0;class#CustomerServiceImpl#0" />
+                <element signature="method#title#0;class#CustomerServiceImpl#0" />
+                <element signature="method#format#0;class#CustomerServiceImpl#0" />
               </folding>
             </state>
           </provider>
@@ -130,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/test/java/hello/ApplicationTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Example1/SpringContainer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hello/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/Example1/EventLogger.java" />
         <option value="$PROJECT_DIR$/src/main/java/Example1/ConsoleEventLogger.java" />
         <option value="$PROJECT_DIR$/src/main/java/Example1/Client.java" />
@@ -138,13 +136,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Example1/MobileProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/Example1/Snapdragon.java" />
         <option value="$PROJECT_DIR$/src/main/java/Example1/MediaTek.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Example1/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/Example1/Samsung.java" />
         <option value="$PROJECT_DIR$/src/main/java/SpringSqlTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SqlTest/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/SqlTest/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/SqlTest/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SqlTest/AppConfig/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/app.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/SqlTest/AppConfig/Customer.java" />
@@ -156,6 +152,9 @@
         <option value="$PROJECT_DIR$/src/main/java/SqlTest/Service/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/SqlTest/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/SqlTest/Dao/CustomerDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SqlTest/AppConfig/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Example1/AppConfig.java" />
       </list>
     </option>
   </component>
@@ -212,6 +211,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="SqlTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringTest" type="b2602c69:ProjectViewProjectNode" />
@@ -422,8 +429,23 @@
       <workItem from="1527438053780" duration="129000" />
       <workItem from="1527441173888" duration="10000" />
       <workItem from="1527441526923" duration="10000" />
-      <workItem from="1527572142335" duration="13168000" />
+      <workItem from="1527572142335" duration="13917000" />
     </task>
+    <task id="LOCAL-00001" summary="springTest Sqlite">
+      <created>1527585367015</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527585367015</updated>
+    </task>
+    <task id="LOCAL-00002" summary="springTest Sqlite">
+      <created>1527585415817</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527585415817</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -435,10 +457,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28051000" />
+    <option name="totallyTimeSpent" value="28800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -456,11 +479,11 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23809524" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.329718" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16823465" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.24186552" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16823465" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -509,6 +532,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="springTest Sqlite" />
+    <option name="LAST_COMMIT_MESSAGE" value="springTest Sqlite" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -774,16 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Example1/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Example1/Samsung.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -815,23 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Example1/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SpringSqlTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -856,30 +856,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/AppConfig/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/AppConfig/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="637">
           <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/Dao/CustomerDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="76" column="24" lean-forward="true" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -900,14 +880,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/Service/CustomerServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/Dao/CustomerDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="229" selection-start-line="229" selection-end-line="229" />
+        <state relative-caret-position="150">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Example1/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Example1/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/Dao/CustomerDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="76" column="24" lean-forward="true" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/Service/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#addCustomer#0;class#CustomerServiceImpl#0" />
             <element signature="method#editCustomer#0;class#CustomerServiceImpl#0" />
             <element signature="method#deleteCustomer#0;class#CustomerServiceImpl#0" />
@@ -921,20 +939,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/Dao/CustomerDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hello/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/AppConfig/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SqlTest/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+        <state relative-caret-position="480">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

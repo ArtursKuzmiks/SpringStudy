@@ -20,8 +20,12 @@ import javax.sql.DataSource;
 @PropertySource(value = {"classpath:app.properties"})
 public class AppConfig {
 
-    @Autowired
     private Environment env;
+
+    @Autowired
+    public AppConfig(Environment env) {
+        this.env = env;
+    }
 
     @Bean
     public DataSource dataSource() {
