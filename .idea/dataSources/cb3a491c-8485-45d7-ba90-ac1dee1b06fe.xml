@@ -40,7 +40,7 @@
       <Position>5</Position>
       <DataType>REAL|0s</DataType>
     </column>
-    <column id="14" parent="6" name="payd">
+    <column id="14" parent="6" name="paid">
       <Position>6</Position>
       <DataType>REAL|0s</DataType>
     </column>
