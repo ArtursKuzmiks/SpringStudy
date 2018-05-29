@@ -27,18 +27,18 @@ public class CustomerDaoImpl implements CustomerDao {
 
     @Override
     public void addCustomer(Customer customer) {
-        jdbcTemplate.update("INSERT INTO md_2DB (id,Name,Surname,orderDate,cost,payd)" +
+        jdbcTemplate.update("INSERT INTO md_2DB (id,Name,Surname,orderDate,cost,paid)" +
                         " VALUES (?,?,?,?,?,?)", customer.getID(), customer.getName(), customer.getSurname(),
-                customer.getOrderDate(), customer.getCost(), customer.getPayd());
+                customer.getOrderDate(), customer.getCost(), customer.getPaid());
 
         System.out.println("Customer Added!");
     }
 
     @Override
     public void editCustomer(Customer customer, int customerId) {
-        jdbcTemplate.update("REPLACE INTO md_2DB (id,Name,Surname,orderDate,cost,payd) " +
+        jdbcTemplate.update("REPLACE INTO md_2DB (id,Name,Surname,orderDate,cost,paid) " +
                         "VALUES(?,?,?,?,?,?)", customerId, customer.getName(), customer.getSurname(), customer.getOrderDate(),
-                customer.getCost(), customer.getPayd());
+                customer.getCost(), customer.getPaid());
 
         System.out.println("Customer Updated!");
 
@@ -62,7 +62,7 @@ public class CustomerDaoImpl implements CustomerDao {
     @Override
     public List<Customer> debtors() {
 
-        return jdbcTemplate.query("SELECT * FROM md_2DB WHERE payd < cost",
+        return jdbcTemplate.query("SELECT * FROM md_2DB WHERE paid < cost",
                 new BeanPropertyRowMapper<>(Customer.class));
     }
 

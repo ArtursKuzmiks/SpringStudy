@@ -24,21 +24,21 @@ public class App {
         int menu;
 
         System.out.println("Menu");
-        System.out.println("Check the table                                   : 1");
-        System.out.println("Add customer                                      : 2");
-        System.out.println("Remote customer                                   : 3");
-        System.out.println("Correct data                                      : 4");
-        System.out.println("Sort by order date and Surname                    : 5");
-        System.out.println("Debtors list                                      : 6");
-        System.out.println("Cost of all orders                                : 7");
-        System.out.println("END                                               : 0");
+        System.out.println("1: Check the table");
+        System.out.println("2: Add customer");
+        System.out.println("3: Remote customer");
+        System.out.println("4: Correct data");
+        System.out.println("5: Sort by order date and Surname");
+        System.out.println("6: Debtors list");
+        System.out.println("7: Cost of all orders");
+        System.out.println("0: END");
 
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
 
             loop:
             for (; ; ) {
 
-                System.out.print("Input: ");
+                System.out.print("\nInput: ");
                 menu = Integer.parseInt(br.readLine());
 
                 switch (menu) {

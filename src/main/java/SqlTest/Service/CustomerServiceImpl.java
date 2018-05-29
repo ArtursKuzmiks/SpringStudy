@@ -96,12 +96,12 @@ public class CustomerServiceImpl implements CustomerService {
 
                 try {
                     System.out.println("Editing menu");
-                    System.out.println("Name                         : 1");
-                    System.out.println("Surname                      : 2");
-                    System.out.println("Order date                   : 3");
-                    System.out.println("Cost                         : 4");
-                    System.out.println("Paid                         : 5");
-                    System.out.println("End                          : 0");
+                    System.out.println("1: Name");
+                    System.out.println("2: Surname");
+                    System.out.println("3: Order date");
+                    System.out.println("4: Cost");
+                    System.out.println("5: Paid");
+                    System.out.println("0: End");
                     loop:
                     for (; ; ) {
                         System.out.print("Menu: ");
@@ -141,7 +141,7 @@ public class CustomerServiceImpl implements CustomerService {
                                 if (paid > customer.getCost())
                                     System.out.println("Paid > cost, error");
                                 else
-                                    customer.setPayd(paid);
+                                    customer.setPaid(paid);
                                 break;
                             case 0:
                                 break loop;

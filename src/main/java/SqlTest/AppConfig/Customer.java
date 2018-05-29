@@ -11,20 +11,20 @@ public class Customer {
     private String surname;
     private String orderDate;
     private float cost;
-    private float payd;
+    private float paid;
 
     public Customer() {
     }
 
     public Customer(int ID, String name, String surname, String orderDate,
-                    float cost, float payd) {
+                    float cost, float paid) {
         super();
         this.ID = ID;
         this.name = name;
         this.surname = surname;
         this.orderDate = orderDate;
         this.cost = cost;
-        this.payd = payd;
+        this.paid = paid;
 
     }
 
@@ -68,17 +68,17 @@ public class Customer {
         this.cost = cost;
     }
 
-    public float getPayd() {
-        return payd;
+    public float getPaid() {
+        return paid;
     }
 
-    public void setPayd(float payd) {
-        this.payd = payd;
+    public void setPaid(float paid) {
+        this.paid = paid;
     }
 
     @Override
     public String toString() {
         return String.format("%-5s\t%-15s\t%-15s\t%-15s\t%.2f\t%.2f",
-                ID, name, surname,orderDate,cost,payd);
+                ID, name, surname,orderDate,cost, paid);
     }
 }
