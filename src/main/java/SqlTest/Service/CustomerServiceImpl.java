@@ -43,6 +43,9 @@ public class CustomerServiceImpl implements CustomerService {
             System.out.print("ID: ");
             customer.setID(Integer.parseInt(reader.readLine()));
 
+            if (customer.getID() <= 0)
+                throw new IllegalArgumentException();
+
             System.out.print("Name: ");
             customer.setName(format(reader.readLine()));
 
@@ -156,7 +159,7 @@ public class CustomerServiceImpl implements CustomerService {
                         }
                     }
 
-                    customerDao.editCustomer(customer,customer.getID());
+                    customerDao.editCustomer(customer, customer.getID());
 
                 } catch (IllegalArgumentException e) {
                     System.out.println("Input error");
