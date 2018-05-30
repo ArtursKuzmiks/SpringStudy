@@ -1,9 +1,13 @@
 package SqlTest.AppConfig;
 
+import javax.persistence.Entity;
+
 
 /**
  * @author Artur Kuzmik on 18.29.5
  */
+
+@Entity
 public class Customer {
 
     private int ID;

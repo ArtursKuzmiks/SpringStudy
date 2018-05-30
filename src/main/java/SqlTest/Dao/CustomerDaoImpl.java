@@ -13,6 +13,7 @@ import java.util.List;
 /**
  * @author Artur Kuzmik on 18.29.5
  */
+
 @Repository
 @Qualifier("customerDao")
 public class CustomerDaoImpl implements CustomerDao {
@@ -25,19 +26,20 @@ public class CustomerDaoImpl implements CustomerDao {
         this.jdbcTemplate = jdbcTemplate;
     }
 
+
     @Override
     public void addCustomer(Customer customer) {
-        jdbcTemplate.update("INSERT INTO md_2DB (id,Name,Surname,orderDate,cost,paid)" +
-                        " VALUES (?,?,?,?,?,?)", customer.getID(), customer.getName(), customer.getSurname(),
-                customer.getOrderDate(), customer.getCost(), customer.getPaid());
+        jdbcTemplate.update("INSERT INTO md_2DB (id,Name,Surname,orderDate,cost,paid) VALUES (?,?,?,?,?,?)",
+                customer.getID(), customer.getName(), customer.getSurname(),customer.getOrderDate(),
+                customer.getCost(), customer.getPaid());
 
         System.out.println("Customer Added!");
     }
 
     @Override
-    public void editCustomer(Customer customer, int customerId) {
-        jdbcTemplate.update("REPLACE INTO md_2DB (id,Name,Surname,orderDate,cost,paid) " +
-                        "VALUES(?,?,?,?,?,?)", customerId, customer.getName(), customer.getSurname(), customer.getOrderDate(),
+    public void editCustomer(Customer customer,int customerId) {
+        jdbcTemplate.update("REPLACE INTO md_2DB (id,Name,Surname,orderDate,cost,paid) VALUES(?,?,?,?,?,?)",
+                customerId, customer.getName(), customer.getSurname(), customer.getOrderDate(),
                 customer.getCost(), customer.getPaid());
 
         System.out.println("Customer Updated!");
@@ -70,8 +72,8 @@ public class CustomerDaoImpl implements CustomerDao {
     public Customer find(int customerId) {
         try {
 
-            return jdbcTemplate.queryForObject("SELECT * FROM md_2DB " +
-                    "WHERE id = ?", new Object[]{customerId}, new BeanPropertyRowMapper<>(Customer.class));
+            return jdbcTemplate.queryForObject("SELECT * FROM md_2DB WHERE id = ?",
+                    new Object[]{customerId}, new BeanPropertyRowMapper<>(Customer.class));
 
         } catch (EmptyResultDataAccessException e){
             return null;

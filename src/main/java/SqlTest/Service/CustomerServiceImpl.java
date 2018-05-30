@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.sql.SQLOutput;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,11 +22,13 @@ import java.util.List;
 public class CustomerServiceImpl implements CustomerService {
 
     private CustomerDao customerDao;
+    private Customer customer;
     private BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     @Autowired
-    public CustomerServiceImpl(CustomerDao customerDao) {
+    public CustomerServiceImpl(CustomerDao customerDao, Customer customer) {
         this.customerDao = customerDao;
+        this.customer = customer;
     }
 
     @Override
@@ -38,11 +41,14 @@ public class CustomerServiceImpl implements CustomerService {
 
             System.out.println("Add Customer");
 
+            System.out.print("ID: ");
+            customer.setID(Integer.parseInt(reader.readLine()));
+
             System.out.print("Name: ");
-            String name = format(reader.readLine());
+            customer.setName(format(reader.readLine()));
 
             System.out.print("Surname: ");
-            String surname = format(reader.readLine());
+            customer.setSurname(format(reader.readLine()));
 
             System.out.print("Date(yyyy-MM-dd):");
 
@@ -63,13 +69,15 @@ public class CustomerServiceImpl implements CustomerService {
                 System.out.println("Incorrect format");
             }
 
+            customer.setOrderDate(sim.format(data));
+
             System.out.print("Cost: ");
-            float cost = Float.parseFloat(reader.readLine());
+            customer.setCost(Float.parseFloat(reader.readLine()));
 
             System.out.print("Paid: ");
-            float paid = Float.parseFloat(reader.readLine());
+            customer.setPaid(Float.parseFloat(reader.readLine()));
 
-            customerDao.addCustomer(new Customer(findAll().size() +1, name, surname, sim.format(data), cost, paid));
+            customerDao.addCustomer(customer);
 
 
         } catch (IllegalArgumentException e) {
@@ -85,13 +93,12 @@ public class CustomerServiceImpl implements CustomerService {
         try {
             System.out.print("Input Customer ID: ");
 
-            int customerId = Integer.parseInt(reader.readLine());
-            Customer customer = find(customerId);
+            customer = find(Integer.parseInt(reader.readLine()));
 
             if (customer != null) {
                 System.out.println("Customer:");
                 title();
-                System.out.println(find(customerId).toString());
+                System.out.println(customer.toString());
                 System.out.println();
 
                 try {
@@ -150,10 +157,10 @@ public class CustomerServiceImpl implements CustomerService {
                         }
                     }
 
-                    customerDao.editCustomer(customer, customerId);
+                    customerDao.editCustomer(customer,customer.getID());
 
                 } catch (IllegalArgumentException e) {
-                    System.out.println("input error");
+                    System.out.println("Input error");
                 }
 
             } else

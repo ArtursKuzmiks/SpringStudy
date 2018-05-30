@@ -39,11 +39,16 @@ public class AppConfig {
     }
 
     @Bean
-    public JdbcTemplate jdbcTemplate(DataSource dataSource){
+    public JdbcTemplate jdbcTemplate(DataSource dataSource) {
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
         jdbcTemplate.setResultsMapCaseInsensitive(true);
 
         return jdbcTemplate;
+    }
+
+    @Bean
+    public Customer customer() {
+        return new Customer();
     }
 
 }
