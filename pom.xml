@@ -20,22 +20,26 @@
         </plugins>
     </build>
     <dependencies>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId> spring-context</artifactId>
             <version>5.1.0.BUILD-SNAPSHOT</version>
         </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.0.3</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jdbc</artifactId>
             <version>1.0.0.M3</version>
         </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
@@ -48,8 +52,15 @@
             <version>3.23.1</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.3.1.Final</version>
+        </dependency>
+
     </dependencies>
     <repositories>
+
         <repository>
             <id>spring-libs-milestone</id>
             <name>Spring Milestones</name>
