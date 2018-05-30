@@ -15,6 +15,7 @@ import javax.sql.DataSource;
 /**
  * @author Artur Kuzmik on 18.29.5
  */
+
 @Configuration
 @ComponentScan(basePackages = "SqlTest")
 @PropertySource(value = {"classpath:app.properties"})
