@@ -29,8 +29,8 @@ public class CustomerDaoImpl implements CustomerDao {
 
     @Override
     public void addCustomer(Customer customer) {
-        jdbcTemplate.update("INSERT INTO md_2DB (id,Name,Surname,orderDate,cost,paid) VALUES (?,?,?,?,?,?)",
-                customer.getID(), customer.getName(), customer.getSurname(),customer.getOrderDate(),
+        jdbcTemplate.update("INSERT INTO md_2DB (Name,Surname,orderDate,cost,paid) VALUES (?,?,?,?,?)",
+                customer.getName(), customer.getSurname(),customer.getOrderDate(),
                 customer.getCost(), customer.getPaid());
 
         System.out.println("Customer Added!");

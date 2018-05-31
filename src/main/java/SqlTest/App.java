@@ -19,7 +19,7 @@ public class App {
     public static void main(String[] args) throws IOException {
 
         AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        CustomerService customerService = (CustomerService) context.getBean("CustomerService");
+        CustomerService customerService = context.getBean(CustomerService.class);
 
         int menu;
 

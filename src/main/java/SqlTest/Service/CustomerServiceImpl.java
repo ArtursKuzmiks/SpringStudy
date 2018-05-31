@@ -40,12 +40,6 @@ public class CustomerServiceImpl implements CustomerService {
 
             System.out.println("Add Customer");
 
-            System.out.print("ID: ");
-            customer.setID(Integer.parseInt(reader.readLine()));
-
-            if (customer.getID() <= 0)
-                throw new IllegalArgumentException();
-
             System.out.print("Name: ");
             customer.setName(format(reader.readLine()));
 
