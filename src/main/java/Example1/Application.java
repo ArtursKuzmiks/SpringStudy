@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author Artur Kuzmik on 18.27.5
  */
 
-public class App {
+public class Application {
     public static void main(String[] args) {
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(AppConfig.class);

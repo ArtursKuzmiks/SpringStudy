@@ -105,8 +105,10 @@ public class CustomerServiceImpl implements CustomerService {
                     System.out.println("4: Cost");
                     System.out.println("5: Paid");
                     System.out.println("0: End");
+
                     loop:
                     for (; ; ) {
+
                         System.out.print("Menu: ");
                         int menu = Integer.parseInt(reader.readLine());
 
