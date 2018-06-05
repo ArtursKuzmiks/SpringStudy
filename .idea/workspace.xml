@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76d1fd3e-2ac6-4cbe-ae2e-ab7c4276107f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="76d1fd3e-2ac6-4cbe-ae2e-ab7c4276107f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -182,6 +180,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -610,7 +611,7 @@
       <workItem from="1528129339388" duration="599000" />
       <workItem from="1528184648909" duration="12258000" />
       <workItem from="1528199820841" duration="1676000" />
-      <workItem from="1528202492190" duration="356000" />
+      <workItem from="1528202492190" duration="609000" />
     </task>
     <task id="LOCAL-00001" summary="springTest Sqlite">
       <created>1527585367015</created>
@@ -759,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528202303844</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="AES Util add">
+      <created>1528202852434</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1528202852434</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -771,7 +779,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82430000" />
+    <option name="totallyTimeSpent" value="82683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
