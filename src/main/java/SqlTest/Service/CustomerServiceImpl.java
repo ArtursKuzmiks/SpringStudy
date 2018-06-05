@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
@@ -191,7 +192,9 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void sortDateSurname() {
-        List<Customer> customers = customerDao.sortDateSurname();
+        List<Customer> customers = customerDao.findAll();
+
+        customers.sort(Comparator.comparing(Customer::getOrderDate).thenComparing(Customer::getSurname));
 
         title();
 
