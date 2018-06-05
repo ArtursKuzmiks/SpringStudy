@@ -2,6 +2,7 @@ package SqlTest.Dao;
 
 import SqlTest.AppConfig.Customer;
 import SqlTest.Crypto.AesUtil;
+import SqlTest.Crypto.AesUtilImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -21,12 +22,12 @@ public class CustomerDaoImpl implements CustomerDao {
 
 
     private JdbcTemplate jdbcTemplate;
-    private AesUtil aesUtil;
+    private AesUtilImpl aesUtilImpl;
 
     @Autowired
-    public CustomerDaoImpl(JdbcTemplate jdbcTemplate, AesUtil aesUtil) {
+    public CustomerDaoImpl(JdbcTemplate jdbcTemplate, AesUtilImpl aesUtilImpl) {
         this.jdbcTemplate = jdbcTemplate;
-        this.aesUtil = aesUtil;
+        this.aesUtilImpl = aesUtilImpl;
     }
 
 
@@ -34,8 +35,8 @@ public class CustomerDaoImpl implements CustomerDao {
     public void addCustomer(Customer customer) {
         try {
             jdbcTemplate.update("INSERT INTO md_2DB (Name,Surname,orderDate,cost,paid) VALUES (?,?,?,?,?)",
-                    aesUtil.encrypt(customer.getName()), aesUtil.encrypt(customer.getSurname()),
-                    aesUtil.encrypt(customer.getOrderDate()), customer.getCost(), customer.getPaid());
+                    aesUtilImpl.encrypt(customer.getName()), aesUtilImpl.encrypt(customer.getSurname()),
+                    aesUtilImpl.encrypt(customer.getOrderDate()), customer.getCost(), customer.getPaid());
         } catch (Exception e) {
             System.out.println("Encrypting error");
         }
@@ -47,8 +48,8 @@ public class CustomerDaoImpl implements CustomerDao {
     public void editCustomer(Customer customer, int customerId) {
         try {
             jdbcTemplate.update("REPLACE INTO md_2DB (id,Name,Surname,orderDate,cost,paid) VALUES(?,?,?,?,?,?)",
-                    customerId, aesUtil.encrypt(customer.getName()), aesUtil.encrypt(customer.getSurname()),
-                    aesUtil.encrypt(customer.getOrderDate()), customer.getCost(), customer.getPaid());
+                    customerId, aesUtilImpl.encrypt(customer.getName()), aesUtilImpl.encrypt(customer.getSurname()),
+                    aesUtilImpl.encrypt(customer.getOrderDate()), customer.getCost(), customer.getPaid());
         } catch (Exception e) {
             System.out.println("Encrypting error");
         }
@@ -100,9 +101,9 @@ public class CustomerDaoImpl implements CustomerDao {
         for (Customer aCustomers : customers) {
             try {
 
-                aCustomers.setName(aesUtil.decrypt(aCustomers.getName()));
-                aCustomers.setSurname(aesUtil.decrypt(aCustomers.getSurname()));
-                aCustomers.setOrderDate(aesUtil.decrypt(aCustomers.getOrderDate()));
+                aCustomers.setName(aesUtilImpl.decrypt(aCustomers.getName()));
+                aCustomers.setSurname(aesUtilImpl.decrypt(aCustomers.getSurname()));
+                aCustomers.setOrderDate(aesUtilImpl.decrypt(aCustomers.getOrderDate()));
 
             } catch (Exception e) {
                 System.out.println("Decrypting error");
@@ -115,9 +116,9 @@ public class CustomerDaoImpl implements CustomerDao {
     private Customer customerDecrypt(Customer customer){
         try {
 
-            customer.setName(aesUtil.decrypt(customer.getName()));
-            customer.setSurname(aesUtil.decrypt(customer.getSurname()));
-            customer.setOrderDate(aesUtil.decrypt(customer.getOrderDate()));
+            customer.setName(aesUtilImpl.decrypt(customer.getName()));
+            customer.setSurname(aesUtilImpl.decrypt(customer.getSurname()));
+            customer.setOrderDate(aesUtilImpl.decrypt(customer.getOrderDate()));
 
         } catch (Exception e) {
             System.out.println("Decrypting error");
