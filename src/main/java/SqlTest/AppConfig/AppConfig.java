@@ -1,6 +1,5 @@
 package SqlTest.AppConfig;
 
-import SqlTest.Crypto.AesUtilImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -51,11 +50,6 @@ public class AppConfig {
     @Bean
     public Customer customer() {
         return new Customer();
-    }
-
-    @Bean
-    public AesUtilImpl aesUtil(){
-        return new AesUtilImpl();
     }
 
 }
