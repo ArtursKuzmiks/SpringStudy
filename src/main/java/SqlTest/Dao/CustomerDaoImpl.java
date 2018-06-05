@@ -67,12 +67,6 @@ public class CustomerDaoImpl implements CustomerDao {
     }
 
     @Override
-    public List<Customer> sortDateSurname() {
-        return listDecrypt(jdbcTemplate.query("SELECT * FROM md_2DB ORDER by orderDate,Surname ASC",
-                new BeanPropertyRowMapper<>(Customer.class)));
-    }
-
-    @Override
     public List<Customer> debtors() {
         return listDecrypt(jdbcTemplate.query("SELECT * FROM md_2DB WHERE paid < cost",
                 new BeanPropertyRowMapper<>(Customer.class)));

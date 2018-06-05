@@ -16,8 +16,6 @@ public interface CustomerDao {
 
     void deleteCustomer(int customerId);
 
-    List<Customer> sortDateSurname();
-
     List<Customer> debtors();
 
     Customer find(int customerId);
