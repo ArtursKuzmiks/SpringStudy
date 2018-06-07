@@ -193,14 +193,9 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void sortDateSurname() {
         List<Customer> customers = customerDao.findAll();
-
         customers.sort(Comparator.comparing(Customer::getOrderDate).thenComparing(Customer::getSurname));
-
         tableTitle();
-
-        for (Customer customer : customers) {
-            System.out.println(customer.toString());
-        }
+        customers.forEach(customer-> System.out.println(customer.toString()));
 
         System.out.println();
 
@@ -209,23 +204,15 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void debtors() {
         List<Customer> customers = customerDao.debtors();
-
         tableTitle();
-
-        for (Customer customer : customers) {
-            System.out.println(customer.toString());
-        }
-
+        customers.forEach(customer-> System.out.println(customer.toString()));
         System.out.println();
     }
 
     @Override
     public void allPrice() {
         double amount = 0;
-        List<Customer> customers = findAll();
-
-        for (Customer customer : customers) amount += customer.getCost();
-
+        amount += findAll().stream().mapToDouble(Customer::getCost).sum();
         System.out.printf("Cost of all orders: %.2f\n", amount);
 
     }
@@ -243,12 +230,8 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void printCustomers() {
         List<Customer> customers = findAll();
-
         tableTitle();
-
-        for (Customer customer : customers) {
-            System.out.println(customer.toString());
-        }
+        customers.forEach(customer-> System.out.println(customer.toString()));
         System.out.println();
 
     }
