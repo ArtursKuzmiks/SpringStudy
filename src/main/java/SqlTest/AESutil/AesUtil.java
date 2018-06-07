@@ -1,4 +1,4 @@
-package SqlTest.Crypto;
+package SqlTest.AESutil;
 
 /**
  * @author Artur Kuzmik on 18.5.6
