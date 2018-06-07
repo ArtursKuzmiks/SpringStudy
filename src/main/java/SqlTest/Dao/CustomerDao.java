@@ -12,13 +12,13 @@ public interface CustomerDao {
 
     void addCustomer(Customer customer);
 
-    void editCustomer(Customer customer,int customerId);
+    void editCustomer(Customer customer, Long customerId);
 
     void deleteCustomer(int customerId);
 
     List<Customer> debtors();
 
-    Customer find(int customerId);
+    Customer find(long customerId);
 
     List<Customer> findAll();
 }

@@ -1,12 +1,16 @@
 package SqlTest.AppConfig;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * @author Artur Kuzmik on 18.29.5
  */
-
+@Entity
 public class Customer {
 
-    private int ID;
+    private @Id @GeneratedValue Long ID;
     private String name;
     private String surname;
     private String orderDate;
@@ -16,10 +20,9 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(int ID, String name, String surname, String orderDate,
+    public Customer(String name, String surname, String orderDate,
                     float cost, float paid) {
         super();
-        this.ID = ID;
         this.name = name;
         this.surname = surname;
         this.orderDate = orderDate;
@@ -28,11 +31,11 @@ public class Customer {
 
     }
 
-    public int getID() {
+    public Long getID() {
         return ID;
     }
 
-    public void setID(int ID) {
+    public void setID(Long ID) {
         this.ID = ID;
     }
 

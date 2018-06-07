@@ -5,6 +5,7 @@ package SqlTest.Crypto;
  */
 
 public interface AesUtil {
+
     String encrypt(String origString) throws Exception;
 
     String decrypt(String encrypted) throws Exception;

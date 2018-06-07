@@ -23,7 +23,7 @@ public interface CustomerService {
 
     void allPrice();
 
-    Customer find(int customerId);
+    Customer find(long customerId);
 
     List<Customer> findAll();
 

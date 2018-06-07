@@ -42,10 +42,10 @@ public class CustomerServiceImpl implements CustomerService {
             System.out.println("Add Customer");
 
             System.out.print("Name: ");
-            customer.setName(format(reader.readLine()));
+            customer.setName(stringFormat(reader.readLine()));
 
             System.out.print("Surname: ");
-            customer.setSurname(format(reader.readLine()));
+            customer.setSurname(stringFormat(reader.readLine()));
 
             System.out.print("Date(yyyy-MM-dd):");
 
@@ -63,7 +63,7 @@ public class CustomerServiceImpl implements CustomerService {
                 }
 
             } catch (ParseException e) {
-                System.out.println("Incorrect format");
+                System.out.println("Incorrect stringFormat");
             }
 
             customer.setOrderDate(sim.format(data));
@@ -90,11 +90,11 @@ public class CustomerServiceImpl implements CustomerService {
         try {
             System.out.print("Input Customer ID: ");
 
-            customer = find(Integer.parseInt(reader.readLine()));
+            customer = find(Long.parseLong(reader.readLine()));
 
             if (customer != null) {
                 System.out.println("Customer:");
-                title();
+                tableTitle();
                 System.out.println(customer.toString());
                 System.out.println();
 
@@ -116,11 +116,11 @@ public class CustomerServiceImpl implements CustomerService {
                         switch (menu) {
                             case 1:
                                 System.out.print("Input Name: ");
-                                customer.setName(format(reader.readLine()));
+                                customer.setName(stringFormat(reader.readLine()));
                                 break;
                             case 2:
                                 System.out.print("Input Surname: ");
-                                customer.setSurname(format(reader.readLine()));
+                                customer.setSurname(stringFormat(reader.readLine()));
                                 break;
                             case 3:
                                 System.out.print("Input date (yyyy-MM-dd): ");
@@ -133,7 +133,7 @@ public class CustomerServiceImpl implements CustomerService {
                                     else
                                         customer.setOrderDate(sim.format(date));
                                 } catch (ParseException e) {
-                                    System.out.println("Incorrect date format");
+                                    System.out.println("Incorrect date stringFormat");
                                 }
                                 break;
                             case 4:
@@ -196,7 +196,7 @@ public class CustomerServiceImpl implements CustomerService {
 
         customers.sort(Comparator.comparing(Customer::getOrderDate).thenComparing(Customer::getSurname));
 
-        title();
+        tableTitle();
 
         for (Customer customer : customers) {
             System.out.println(customer.toString());
@@ -210,7 +210,7 @@ public class CustomerServiceImpl implements CustomerService {
     public void debtors() {
         List<Customer> customers = customerDao.debtors();
 
-        title();
+        tableTitle();
 
         for (Customer customer : customers) {
             System.out.println(customer.toString());
@@ -231,7 +231,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public Customer find(int customerId) {
+    public Customer find(long customerId) {
         return customerDao.find(customerId);
     }
 
@@ -244,7 +244,7 @@ public class CustomerServiceImpl implements CustomerService {
     public void printCustomers() {
         List<Customer> customers = findAll();
 
-        title();
+        tableTitle();
 
         for (Customer customer : customers) {
             System.out.println(customer.toString());
@@ -253,7 +253,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     }
 
-    private void title() {
+    private void tableTitle() {
         System.out.printf("\n%-5s\t%-15s\t%-15s\t%-15s\t%-5s\t%s\n",
                 "ID", "Name", "Surname", "Date", "Cost", "Paid");
 
@@ -261,7 +261,7 @@ public class CustomerServiceImpl implements CustomerService {
                 "----", "-------", "--------", "----------", "-----", "-----");
     }
 
-    private String format(String a) {
+    private String stringFormat(String a) {
         String temp = a.trim();
         return temp.substring(0, 1).toUpperCase() + temp.substring(1);
 

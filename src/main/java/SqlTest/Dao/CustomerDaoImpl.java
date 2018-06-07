@@ -44,7 +44,7 @@ public class CustomerDaoImpl implements CustomerDao {
     }
 
     @Override
-    public void editCustomer(Customer customer, int customerId) {
+    public void editCustomer(Customer customer, Long customerId) {
         try {
             jdbcTemplate.update("REPLACE INTO md_2DB (id,Name,Surname,orderDate,cost,paid) VALUES(?,?,?,?,?,?)",
                     customerId, aesUtil.encrypt(customer.getName()), aesUtil.encrypt(customer.getSurname()),
@@ -72,7 +72,7 @@ public class CustomerDaoImpl implements CustomerDao {
     }
 
     @Override
-    public Customer find(int customerId) {
+    public Customer find(long customerId) {
         try {
             return customerDecrypt(jdbcTemplate.queryForObject("SELECT * FROM md_2DB WHERE id = ?",
                     new Object[]{customerId}, new BeanPropertyRowMapper<>(Customer.class)));
@@ -93,11 +93,7 @@ public class CustomerDaoImpl implements CustomerDao {
     private List<Customer> listDecrypt(List<Customer> customers){
         for (Customer aCustomers : customers) {
             try {
-
-                aCustomers.setName(aesUtil.decrypt(aCustomers.getName()));
-                aCustomers.setSurname(aesUtil.decrypt(aCustomers.getSurname()));
-                aCustomers.setOrderDate(aesUtil.decrypt(aCustomers.getOrderDate()));
-
+                customerDecrypt(aCustomers);
             } catch (Exception e) {
                 System.out.println("Decrypting error");
             }
