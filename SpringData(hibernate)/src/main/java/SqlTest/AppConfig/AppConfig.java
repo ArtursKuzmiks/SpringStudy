@@ -47,14 +47,14 @@ public class AppConfig {
     }
 
     @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory(){
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean emFactory = new LocalContainerEntityManagerFactoryBean();
         emFactory.setDataSource(dataSource());
         emFactory.setPersistenceProviderClass(HibernatePersistenceProvider.class);
         emFactory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         Properties jpaProp = new Properties();
-        jpaProp.setProperty("hibernate.dialect","com.enigmabridge.hibernate.dialect.SQLiteDialect");
-        jpaProp.setProperty("hibernate.hbm2ddl.auto","update");
+        jpaProp.setProperty("hibernate.dialect", "com.enigmabridge.hibernate.dialect.SQLiteDialect");
+        jpaProp.setProperty("hibernate.hbm2ddl.auto", "update");
         emFactory.setJpaProperties(jpaProp);
         emFactory.setPackagesToScan("SqlTest");
 
@@ -62,7 +62,7 @@ public class AppConfig {
     }
 
     @Bean
-    public JpaTransactionManager transactionManager(){
+    public JpaTransactionManager transactionManager() {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
         transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
 
@@ -70,7 +70,7 @@ public class AppConfig {
     }
 
     @Bean
-    public Customer customer(){
+    public Customer customer() {
         return new Customer();
     }
 

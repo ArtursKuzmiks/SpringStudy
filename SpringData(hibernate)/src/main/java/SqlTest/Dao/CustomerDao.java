@@ -21,6 +21,7 @@ public interface CustomerDao extends PagingAndSortingRepository<Customer, Long> 
     @Transactional
     void update(@Param("id") Long id, @Param("name") String name, @Param("surname") String surname,
                 @Param("orderDate") String orderDate, @Param("cost") double cost, @Param("paid") double paid);
+
     @Modifying
     @Query("FROM Customer c order by c.orderDate asc,c.surname asc ")
     List<Customer> sortDateSurname();

@@ -24,7 +24,6 @@ public class CustomerServiceImpl implements CustomerService {
 
     private Customer customer;
     private BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
     private CustomerDao customerDao;
 
 
@@ -92,10 +91,7 @@ public class CustomerServiceImpl implements CustomerService {
 
         try {
             System.out.print("Input Customer ID: ");
-
             customer = find(Long.parseLong(reader.readLine()));
-
-
 
             if (customer != null) {
                 System.out.println("Customer:");
@@ -162,8 +158,8 @@ public class CustomerServiceImpl implements CustomerService {
                         }
                     }
 
-                    customerDao.update(customer.getID(),customer.getName(),customer.getSurname(),
-                            customer.getOrderDate(), customer.getCost(),customer.getPaid());
+                    customerDao.update(customer.getID(), customer.getName(), customer.getSurname(),
+                            customer.getOrderDate(), customer.getCost(), customer.getPaid());
 
                 } catch (IllegalArgumentException e) {
                     System.out.println("Input error");
@@ -179,18 +175,13 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public void deleteCustomer() throws IOException {
-
         try {
-
             System.out.print("Input Customer ID: ");
-
             long customerId = Long.parseLong(reader.readLine());
-
             if (find(customerId) != null)
                 customerDao.deleteById(customerId);
             else
                 System.out.println("There is no such ID");
-
         } catch (IllegalArgumentException e) {
             System.out.println("Input error");
         }
@@ -201,7 +192,6 @@ public class CustomerServiceImpl implements CustomerService {
     public void sortDateSurname() {
         tableTitle();
         customerDao.sortDateSurname().forEach(customer -> System.out.println(customer.toString()));
-
         System.out.println();
 
     }
