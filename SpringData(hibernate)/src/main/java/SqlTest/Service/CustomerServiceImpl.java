@@ -233,68 +233,7 @@ public class CustomerServiceImpl implements CustomerService {
         System.out.println();
 
     }
-
-    @Override
-    public void run() throws IOException {
-        int menu;
-
-        System.out.println("Menu");
-        System.out.println("1: Check the table");
-        System.out.println("2: Add customer");
-        System.out.println("3: Remote customer");
-        System.out.println("4: Correct data");
-        System.out.println("5: Sort by order date and Surname");
-        System.out.println("6: Debtors list");
-        System.out.println("7: Cost of all orders");
-        System.out.println("0: END");
-
-        try {
-
-            loop:
-            for (; ; ) {
-
-                System.out.print("\nInput: ");
-                menu = Integer.parseInt(reader.readLine());
-
-                switch (menu) {
-                    case 1:
-                        printCustomers();
-                        break;
-                    case 2:
-                        addCustomer();
-                        printCustomers();
-                        break;
-                    case 3:
-                        deleteCustomer();
-                        printCustomers();
-                        break;
-                    case 4:
-                        editCustomer();
-                        break;
-                    case 5:
-                        sortDateSurname();
-                        break;
-                    case 6:
-                        debtors();
-                        break;
-                    case 7:
-                        allPrice();
-                        break;
-                    case 0:
-                        System.out.println("The work is finished.");
-                        break loop;
-                    default:
-                        System.out.print("There is no such option, try again.\n");
-                        break;
-                }
-            }
-        } catch (IllegalArgumentException e) {
-            System.out.println("Input error");
-        }
-
-    }
-
-
+    
     private void tableTitle() {
         System.out.printf("\n%-5s\t%-15s\t%-15s\t%-15s\t%-5s\t%s\n",
                 "ID", "Name", "Surname", "Date", "Cost", "Paid");

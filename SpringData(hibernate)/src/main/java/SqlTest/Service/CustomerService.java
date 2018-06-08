@@ -27,5 +27,4 @@ public interface CustomerService {
 
     void printCustomers();
 
-    void run() throws IOException;
 }

@@ -1,5 +1,6 @@
 package SqlTest;
 
+import SqlTest.App.App;
 import SqlTest.AppConfig.AppConfig;
 import SqlTest.Service.CustomerService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -13,11 +14,11 @@ import java.io.InputStreamReader;
  * @author Artur Kuzmik on 18.7.6
  */
 
-public class App {
+public class Main {
 
     public static void main(String[] args) throws IOException {
 
         AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        context.getBean(CustomerService.class).run();
+        context.getBean(App.class).run();
     }
 }
