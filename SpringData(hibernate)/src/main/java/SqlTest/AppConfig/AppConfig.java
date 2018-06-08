@@ -1,6 +1,5 @@
 package SqlTest.AppConfig;
 
-import SqlTest.Service.Customer;
 import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -69,9 +68,5 @@ public class AppConfig {
         return transactionManager;
     }
 
-    @Bean
-    public Customer customer() {
-        return new Customer();
-    }
 
 }

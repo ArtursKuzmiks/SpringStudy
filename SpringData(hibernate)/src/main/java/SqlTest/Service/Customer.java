@@ -1,5 +1,7 @@
 package SqlTest.Service;
 
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 
 /**
@@ -7,6 +9,7 @@ import javax.persistence.*;
  */
 
 @Entity
+@Component
 @Table(name = "md_2DB")
 public class Customer {
 

@@ -26,4 +26,6 @@ public interface CustomerService {
     List<Customer> findAll();
 
     void printCustomers();
+
+    void run() throws IOException;
 }
