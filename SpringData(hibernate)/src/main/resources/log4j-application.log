@@ -2171,3 +2171,95 @@
 2018-06-08 12:04:17 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
 2018-06-08 12:04:18 INFO  LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2018-06-08 12:04:19 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-06-08 12:07:12 INFO  AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@47089e5f: startup date [Fri Jun 08 12:07:12 EEST 2018]; root of context hierarchy
+2018-06-08 12:07:13 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.sqlite.JDBC
+2018-06-08 12:07:13 INFO  LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:07:13 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-08 12:07:13 INFO  Version:46 - HHH000412: Hibernate Core {5.3.1.Final}
+2018-06-08 12:07:13 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-06-08 12:07:13 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.3.Final}
+2018-06-08 12:07:13 INFO  Dialect:157 - HHH000400: Using dialect: com.enigmabridge.hibernate.dialect.SQLiteDialect
+2018-06-08 12:07:13 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2018-06-08 12:07:14 INFO  LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:07:14 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-06-08 12:08:29 INFO  AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4141d797: startup date [Fri Jun 08 12:08:29 EEST 2018]; root of context hierarchy
+2018-06-08 12:08:30 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.sqlite.JDBC
+2018-06-08 12:08:30 INFO  LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:08:30 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-08 12:08:30 INFO  Version:46 - HHH000412: Hibernate Core {5.3.1.Final}
+2018-06-08 12:08:30 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-06-08 12:08:30 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.3.Final}
+2018-06-08 12:08:31 INFO  Dialect:157 - HHH000400: Using dialect: com.enigmabridge.hibernate.dialect.SQLiteDialect
+2018-06-08 12:08:31 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2018-06-08 12:08:32 INFO  LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:08:33 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-06-08 12:10:19 INFO  AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4141d797: startup date [Fri Jun 08 12:10:19 EEST 2018]; root of context hierarchy
+2018-06-08 12:10:19 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.sqlite.JDBC
+2018-06-08 12:10:20 INFO  LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:10:20 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-08 12:10:20 INFO  Version:46 - HHH000412: Hibernate Core {5.3.1.Final}
+2018-06-08 12:10:20 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-06-08 12:10:20 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.3.Final}
+2018-06-08 12:10:20 INFO  Dialect:157 - HHH000400: Using dialect: com.enigmabridge.hibernate.dialect.SQLiteDialect
+2018-06-08 12:10:21 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2018-06-08 12:10:21 INFO  LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:10:22 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-06-08 12:16:43 INFO  AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@47089e5f: startup date [Fri Jun 08 12:16:43 EEST 2018]; root of context hierarchy
+2018-06-08 12:16:44 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.sqlite.JDBC
+2018-06-08 12:16:44 INFO  LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:16:44 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-08 12:16:44 INFO  Version:46 - HHH000412: Hibernate Core {5.3.1.Final}
+2018-06-08 12:16:44 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-06-08 12:16:44 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.3.Final}
+2018-06-08 12:16:45 INFO  Dialect:157 - HHH000400: Using dialect: com.enigmabridge.hibernate.dialect.SQLiteDialect
+2018-06-08 12:16:45 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2018-06-08 12:16:46 INFO  LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:16:46 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-06-08 12:18:10 INFO  AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@47089e5f: startup date [Fri Jun 08 12:18:10 EEST 2018]; root of context hierarchy
+2018-06-08 12:18:10 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.sqlite.JDBC
+2018-06-08 12:18:10 INFO  LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:18:10 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-08 12:18:11 INFO  Version:46 - HHH000412: Hibernate Core {5.3.1.Final}
+2018-06-08 12:18:11 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-06-08 12:18:11 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.3.Final}
+2018-06-08 12:18:11 INFO  Dialect:157 - HHH000400: Using dialect: com.enigmabridge.hibernate.dialect.SQLiteDialect
+2018-06-08 12:18:11 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2018-06-08 12:18:12 INFO  LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:18:13 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-06-08 12:18:28 INFO  AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@47089e5f: startup date [Fri Jun 08 12:18:28 EEST 2018]; root of context hierarchy
+2018-06-08 12:18:29 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.sqlite.JDBC
+2018-06-08 12:18:29 INFO  LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:18:29 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-08 12:18:29 INFO  Version:46 - HHH000412: Hibernate Core {5.3.1.Final}
+2018-06-08 12:18:29 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-06-08 12:18:29 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.3.Final}
+2018-06-08 12:18:29 INFO  Dialect:157 - HHH000400: Using dialect: com.enigmabridge.hibernate.dialect.SQLiteDialect
+2018-06-08 12:18:30 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2018-06-08 12:18:31 INFO  LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:18:31 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-06-08 12:25:01 INFO  AnnotationConfigApplicationContext:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@47089e5f: startup date [Fri Jun 08 12:25:01 EEST 2018]; root of context hierarchy
+2018-06-08 12:25:02 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: org.sqlite.JDBC
+2018-06-08 12:25:02 INFO  LocalContainerEntityManagerFactoryBean:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:25:02 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-08 12:25:02 INFO  Version:46 - HHH000412: Hibernate Core {5.3.1.Final}
+2018-06-08 12:25:02 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2018-06-08 12:25:02 INFO  Version:49 - HCANN000001: Hibernate Commons Annotations {5.0.3.Final}
+2018-06-08 12:25:03 INFO  Dialect:157 - HHH000400: Using dialect: com.enigmabridge.hibernate.dialect.SQLiteDialect
+2018-06-08 12:25:03 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2018-06-08 12:25:04 INFO  SchemaCreatorImpl:489 - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@15fdd1f2'
+2018-06-08 12:25:04 INFO  LocalContainerEntityManagerFactoryBean:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-08 12:25:05 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
